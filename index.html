@@ -1,91 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5594643843305690" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5594643843305690"
+     crossorigin="anonymous"></script>
     
 	<title>Canales de TV</title>
-	<link rel="icon" href="https://i.ibb.co/CWMGPWx/image-removebg-preview-31.png">
-	<style>
-		body {
+    <link rel="icon" href="https://i.ibb.co/CWMGPWx/image-removebg-preview-31.png">
+    <style>
+body {
 			background-color: #F4F4F4;
 			font-family: Arial, sans-serif;
 		}
 
-		h1 {
-			font-size: 36px;
-			color: #222222;
-			text-align: center;
-			margin-top: 50px;
-		}
+	h1 {
+		font-size: 36px;
+		color: #222222;
+		text-align: center;
+		margin-top: 50px;
+	}
 
-		.channel-container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			margin-top: 50px;
-		}
+	.channel-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 50px;
+	}
 
-		.channel {
-			background-color: #FFFFFF;
-			border: 1px solid #DDDDDD;
-			border-radius: 5px;
-			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-			margin: 10px;
-			padding: 20px;
-			text-align: center;
-			transition: all 0.3s ease;
-			width: 250px;
-		}
+	.channel {
+		background-color: #FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		margin: 10px;
+		padding: 20px;
+		text-align: center;
+		transition: all 0.3s ease;
+		width: 250px;
+	}
 
-		.channel:hover {
-			transform: translateY(-5px);
-			box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-		}
+	.channel:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	}
 
-		.channel h2 {
-			font-size: 24px;
-			color: #222222;
-			margin-bottom: 10px;
-		}
+	.channel h2 {
+		font-size: 24px;
+		color: #222222;
+		margin-bottom: 10px;
+	}
 
-		.channel a {
-			color: #4285F4;
-			font-weight: bold;
-			text-decoration: none;
-		}
+	.channel a {
+		color: #4285F4;
+		font-weight: bold;
+		text-decoration: none;
+	}
 
-		.channel a:hover {
-			text-decoration: underline;
-		}
-	</style>
-	<script>
-		function playChannel(channelId) {
-			var acestreamLink = "acestream://" + channelId;
-			window.location.href = acestreamLink;
-		}
-
-		window.onload = function() {
-			var channels = document.getElementsByClassName("channel");
-
-			for (var i = 0; i < channels.length; i++) {
-				var channel = channels[i];
-				var link = channel.querySelector("a");
-				var href = link.getAttribute("href");
-				var channelId = href.replace("acestream://", "");
-                channelId = "acestream://" + channelId; // Add "acestream://" to the channel ID
-
-				link.onclick = function() {
-					playChannel(channelId);
-					return false;
-				};
-
-				link.setAttribute("href", "#");
-			}
-		};
-	</script>
-</head>
-<body>
-
+	.channel a:hover {
+		text-decoration: underline;
+	}
+</style>
+  </head>
+  <body>
 
 	<title>Canales de TV</title>
  
