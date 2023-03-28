@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5594643843305690"
-     crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5594643843305690" crossorigin="anonymous"></script>
     
 	<title>Canales de TV</title>
 	<link rel="icon" href="https://i.ibb.co/CWMGPWx/image-removebg-preview-31.png">
@@ -73,6 +72,7 @@
 				var link = channel.querySelector("a");
 				var href = link.getAttribute("href");
 				var channelId = href.replace("acestream://", "");
+                channelId = "acestream://" + channelId; // Add "acestream://" to the channel ID
 
 				link.onclick = function() {
 					playChannel(channelId);
@@ -85,6 +85,7 @@
 	</script>
 </head>
 <body>
+
 
 	<title>Canales de TV</title>
  
